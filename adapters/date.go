@@ -20,11 +20,11 @@ import (
 	dpb "google.golang.org/genproto/googleapis/type/date"
 )
 
-// ProtoDateToLocalTime returns a new Time based on the google.type.Date, in
+// ProtoDateToLocalTimeFoo returns a new Time based on the google.type.Date, in
 // the system's time zone.
 //
 // Hours, minues, seconds, and nanoseconds are set to 0.
-func ProtoDateToLocalTime(d *dpb.Date) time.Time {
+func ProtoDateToLocalTimeFoo(d *dpb.Date) time.Time {
 	return ProtoDateToTime(d, time.Local)
 }
 
